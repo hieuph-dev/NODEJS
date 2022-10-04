@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get CRUD</title>
+  </head>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid #000;
+      border-collapse: collapse;
+    }
+  </style>
+  <body>
+    <table style="width: 100%">
+      <tr>
+        <th>Email</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Address</th>
+      </tr>
+
+      <% for (let i = 0; i < dataTable.length; i++) { %>
+      <tr>
+        <td><%= dataTable[i].email %></td>
+        <td><%= dataTable[i].firstName %></td>
+        <td><%= dataTable[i].lastName %></td>
+        <td><%= dataTable[i].address %></td>
+      </tr>
+      <%}%>
+    </table>
+  </body>
+</html>
